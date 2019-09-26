@@ -15,5 +15,5 @@ popd
 
 msiexec /qb /x C:\Windows\Temp\7z1900-x64.msi
 
-rem make symlink for c:/vagrant share
-mklink /D "C:\Program Files\OpenSSH\vagrant" "C:\vagrant"
+rem make symlink for c:/infinityuser share
+mklink /D "C:\Program Files\OpenSSH\infinityuser" "C:\infinityuser"

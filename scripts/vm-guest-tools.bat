@@ -13,8 +13,8 @@ goto :done
 
 :vmware
 
-if exist "C:\Users\vagrant\windows.iso" (
-    move /Y C:\Users\vagrant\windows.iso C:\Windows\Temp
+if exist "C:\Users\infinityuser\windows.iso" (
+    move /Y C:\Users\infinityuser\windows.iso C:\Windows\Temp
 )
 
 if not exist "C:\Windows\Temp\windows.iso" (
@@ -34,8 +34,8 @@ goto :done
 
 :virtualbox
 
-if exist "C:\Users\vagrant\VBoxGuestAdditions.iso" (
-    move /Y C:\Users\vagrant\VBoxGuestAdditions.iso C:\Windows\Temp
+if exist "C:\Users\infinityuser\VBoxGuestAdditions.iso" (
+    move /Y C:\Users\infinityuser\VBoxGuestAdditions.iso C:\Windows\Temp
 )
 
 if not exist "C:\Windows\Temp\VBoxGuestAdditions.iso" (
@@ -49,8 +49,8 @@ rd /S /Q "C:\Windows\Temp\virtualbox"
 goto :done
 
 :parallels
-if exist "C:\Users\vagrant\prl-tools-win.iso" (
-	move /Y C:\Users\vagrant\prl-tools-win.iso C:\Windows\Temp
+if exist "C:\Users\infinityuser\prl-tools-win.iso" (
+	move /Y C:\Users\infinityuser\prl-tools-win.iso C:\Windows\Temp
 	cmd /C "C:\Program Files\7-Zip\7z.exe" x C:\Windows\Temp\prl-tools-win.iso -oC:\Windows\Temp\parallels
 	cmd /C C:\Windows\Temp\parallels\PTAgent.exe /install_silent
 	rd /S /Q "C:\Windows\Temp\parallels"

@@ -1,6 +1,6 @@
 # for debugging
 # wait until a file has been removed from desktop
-$file = "C:\users\vagrant\Desktop\delete-to-continue.txt"
+$file = "C:\users\infinityuser\Desktop\delete-to-continue.txt"
 
 if (-Not (Test-Path $file)) {
   Write-Host "Remove me" | Out-File $file

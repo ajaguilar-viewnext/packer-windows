@@ -9,11 +9,11 @@ if ((gwmi win32_computersystem).partofdomain -eq $false) {
 
   # Set administrator password
   $computerName = $env:COMPUTERNAME
-  $adminPassword = "vagrant"
+  $adminPassword = "infinityuser"
   $adminUser = [ADSI] "WinNT://$computerName/Administrator,User"
   $adminUser.SetPassword($adminPassword)
 
-  $PlainPassword = "vagrant" # "P@ssw0rd"
+  $PlainPassword = "infinityuser" # "P@ssw0rd"
   $SecurePassword = $PlainPassword | ConvertTo-SecureString -AsPlainText -Force
 
   # Windows Server 2012 R2
