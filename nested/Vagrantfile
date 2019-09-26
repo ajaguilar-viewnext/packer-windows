@@ -9,8 +9,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.communicator = "winrm"
 
-  config.winrm.username = "vagrant"
-  config.winrm.password = "vagrant"
+  config.winrm.username = "infinityuser"
+  config.winrm.password = "infinityuser"
 
   config.vm.guest = :windows
   config.windows.halt_timeout = 15

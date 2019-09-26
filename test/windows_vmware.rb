@@ -2,8 +2,8 @@ require_relative 'spec_helper'
 
 describe 'box' do
   describe 'windows box' do
-    it 'should have a vagrant user' do
-      expect(user 'vagrant').to exist
+    it 'should have a infinityuser user' do
+      expect(user 'infinityuser').to exist
     end
   end
 

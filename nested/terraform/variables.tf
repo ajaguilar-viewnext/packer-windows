@@ -18,7 +18,7 @@ variable "azure_dns_suffix" {
 }
 
 variable "admin_username" {
-  default = "vagrant"
+  default = "infinityuser"
 }
 
 variable "admin_password" {
