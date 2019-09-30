@@ -49,11 +49,12 @@
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "{{user `iso_checksum_type`}}",
       "iso_url": "{{user `iso_url`}}",
-      "memory": 2048,
+      "memory": 7168,
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
       "skip_compaction": true,
       "type": "vmware-iso",
       "vm_name": "vminfinity2012R2",
+      "output_directory": "output-vmwareiso-vminfinity2012r2",
       "vmx_data": {
         "RemoteDisplay.vnc.enabled": "false",
         "RemoteDisplay.vnc.port": "5900"
@@ -61,9 +62,9 @@
       "vmx_remove_ethernet_interfaces": true,
       "vnc_port_max": 5980,
       "vnc_port_min": 5900,
-      "winrm_password": "vagrant",
+      "winrm_password": "infinityuser",
       "winrm_timeout": "{{user `winrm_timeout`}}",
-      "winrm_username": "vagrant"
+      "winrm_username": "infinityuser"
     },
     {
       "boot_wait": "2m",

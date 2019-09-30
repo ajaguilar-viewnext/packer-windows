@@ -1,6 +1,7 @@
 .DS_Store
 /iso/*
 !/iso/README.md
+/output-*/
 /output-hyperv-iso/
 /output-vmware/
 /output-vmware-iso/
@@ -19,3 +20,5 @@ tmp
 /issues/
 *.iso
 path-to.vmx
+.vagrant/
+Vagrant*
