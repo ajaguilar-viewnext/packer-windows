@@ -4,27 +4,28 @@
       "boot_wait": "2m",
       "cpus": 2,
       "disk_adapter_type": "lsisas1068",
-      "disk_size": 131072,
+      "disk_size": 61440,
       "floppy_files": [
         "./answer_files/2008_r2_infinity/Autounattend.xml",
         "./scripts/dis-updates.ps1",
         "./scripts/microsoft-updates.bat",
-        "./scripts/win-updates.ps1",
+        "./scripts/win-updates-openssh.ps1",
         "./scripts/openssh.ps1"
       ],
       "guest_os_type": "windows7srv-64",
-      "headless": true,
+      "headless": false,
       "iso_checksum": "4263be2cf3c59177c45085c0a7bc6ca5",
       "iso_checksum_type": "md5",
       "iso_url": "https://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso",
-      "memory": 2048,
+      "memory": 7168,
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
       "ssh_password": "infinityuser",
       "ssh_username": "infinityuser",
-      "ssh_wait_timeout": "6h",
+      "ssh_wait_timeout": "20h",
       "tools_upload_flavor": "windows",
       "type": "vmware-iso",
       "vm_name": "vminfinity2008R2",
+      "output_directory": "output-vmwareiso-vminfinity2008r2",
       "vmx_data": {
         "RemoteDisplay.vnc.enabled": "false",
         "RemoteDisplay.vnc.port": "5900"
@@ -36,12 +37,12 @@
     {
       "boot_wait": "2m",
       "cpus": 2,
-      "disk_size": 131072,
+      "disk_size": 61440,
       "floppy_files": [
         "./answer_files/2008_r2_infinity/Autounattend.xml",
         "./scripts/dis-updates.ps1",
         "./scripts/microsoft-updates.bat",
-        "./scripts/win-updates.ps1",
+        "./scripts/win-updates-openssh.ps1",
         "./scripts/openssh.ps1"
       ],
       "guest_os_type": "Windows2008_64",
@@ -52,8 +53,8 @@
       "memory": 2048,
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
       "ssh_password": "infinityuser",
-      "ssh_username": "vagraninfinityusert",
-      "ssh_wait_timeout": "6h",
+      "ssh_username": "infinityuser",
+      "ssh_wait_timeout": "12h",
       "type": "virtualbox-iso"
     }
   ],
